@@ -1,6 +1,6 @@
 # Data-Structure-and-Algorithms
  
- This respository is created with the purpose to guide beginners and give them a clear path on how to exactly begin with CP.
+ This respository was created with the purpose to guide beginners and give them a clear path on how to exactly begin with CP.
  We shall be posting basic problems from CodeChef/CodeForces/SpoJ/HackerEarth aswell.
  The codes will mainly include easy implementation of algorithms and data structures.
  We have currently began our journey with Number Theory and shall be updating more codes soon.
