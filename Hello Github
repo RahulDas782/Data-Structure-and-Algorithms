@@ -1,6 +1,10 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main(){
-cout<<"Hello World";
-return 0;
+#define GitHub 0
+#define RahulDas cout<<"Rahul Das is a topper who is on GitHub Now"<<endl
+#define drunkeninja42 cout<<"Identity can't be revealed, Kushagra Sharma is MAIT topper(CSE Projected)"<<endl
+ int main(char **argsv){
+   RahulDas;
+   drunkeninja42;
+    return GitHub;
 }
