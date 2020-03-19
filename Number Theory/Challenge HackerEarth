@@ -1,0 +1,45 @@
+//Link of Question : https://www.hackerearth.com/practice/math/number-theory/primality-tests/practice-problems/algorithm/micro-and-prime-prime-1/
+//I'd suggest you try the question yourself before continuing any further.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<int> sieve(1000000,1);
+vector<int> pp(1000000,0);
+void preprocees(){
+    sieve[0]=sieve[1]=0;
+    for(long long int i=2;i<=sieve.size();i++){
+        if(sieve[i]!=0){
+         for(long long int j=i*i;j<=sieve.size();j+=i){
+             sieve[j]=0;
+         }
+        }
+    }
+    long long int cnt=0;
+    for(long long int i=1;i<=sieve.size();i++){
+        if(sieve[i]==1){
+            cnt++;
+        }
+        if(sieve[cnt]==1){
+            pp[i]=1;
+        }
+    }
+    for(int i=1;i<=sieve.size();i++){
+        pp[i]+=pp[i-1];                      //Cumulative Sum of a Vector.
+    }
+}
+int main(){
+ int t;
+ cin>>t;
+ preprocees();
+
+ while(t--){
+      int fincount=0;
+     int l,r;
+     cin>>l>>r;
+     fincount=pp[r]-pp[l-1];
+     cout<<fincount<<endl;
+ }
+return 0;
+}
