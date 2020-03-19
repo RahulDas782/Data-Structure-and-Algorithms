@@ -5,6 +5,11 @@
  The codes will mainly include easy implementation of algorithms and data structures.
  We have currently began our journey with Number Theory and shall be updating more codes soon.
  The contributors include:
+
 1)Rahul Das : MAIT, 1st Year.
+
+
 2)Maahir Sharma: MAIT, 1st Year.
+
+
 3) drunkeninja42: Doesn't prefer to reveal his identity.
