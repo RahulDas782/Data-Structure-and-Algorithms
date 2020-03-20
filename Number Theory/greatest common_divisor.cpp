@@ -15,7 +15,12 @@ long long  gcd_naive(long long a, long long b) {
 //this is an effecient approach for gcd by euclid's therem.
 //Derived from Euclid's Divison Lemma
 //If we are given two positive integers A,B then A= B*q+r;
-
+long long euclidfather(long long a,long long b){
+   if(b==0){
+     return a;
+     }
+ return (a>b? euclidfather(a-b,b):euclidfather(a,b-a));   //In later cases Modulus handled this exception
+} 
 long long  euclidgcd(long long a,long long b)
 {
 //if b is zero as a divides 0 therefore a will be divided by gcd ie a only 
@@ -33,6 +38,6 @@ long long  euclidgcd(long long a,long long b)
 int main() {
   long long a, b;
   cin >> a >> b;
-  cout<<euclidgcd(a,b);
+  cout<<euclidfather(a,b);
   return 0;
 }
