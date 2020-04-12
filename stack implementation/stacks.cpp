@@ -9,7 +9,7 @@ void push(int val)
 {
     if(top>=n)
     {
-        cout<<"satck overflow"<<endl;
+        cout<<"satck overflow"<<endl; //Top like Kushagra topper?
     }
     else
     {
